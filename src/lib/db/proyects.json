@@ -1,0 +1,34 @@
+{
+  "data": [
+    {
+      "title": "Helados Italia",
+      "description": "This was my first project and the one that got me involved in programming.",
+      "urlProyect": "https://lucasivancardozo.github.io/heladositalia/",
+      "techs": ["html", "css", "javascript"]
+    },
+    {
+      "title": "Bowling de Paso",
+      "description": "A website with an SSR format, dedicated to what the clients wanted, and they were very satisfied.",
+      "urlProyect": "https://lucasivancardozo.github.io/bowling-de-paso/",
+      "techs": ["react", "vite", "css", "jsx"]
+    },
+    {
+      "title": "App Restaurant",
+      "description": "Application for managing restaurant tables, which includes a customer database, tracking of revenue and many other features.",
+      "urlProyect": "/heladosItalia.png",
+      "techs": ["c-sharp", "sqlite", "visualStudio"]
+    },
+    {
+      "title": "Tu amigo FI",
+      "description": "Application for managing restaurant tables, which includes a customer database, tracking of revenue and many other features.",
+      "urlProyect": "https://tuamigofi.ar/",
+      "techs": ["next", "postgresql", "cloudinary"]
+    },
+    {
+      "title": "Carta QR",
+      "description": "Application for managing restaurant tables, which includes a customer database, tracking of revenue and many other features.",
+      "urlProyect": "https://carta-qr-olive.vercel.app/mcdonalds/menu",
+      "techs": ["next", "postgresql"]
+    }
+  ]
+}

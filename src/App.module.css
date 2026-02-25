@@ -1,0 +1,47 @@
+.main {
+  background-image: url('/src/assets/images/mainBackground.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100vw;
+}
+
+.projects {
+  position: relative;
+  background-color: #1f2937;
+  color: #eee;
+  max-width: 100vw;
+  padding: 2em 0;
+}
+
+.projects::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -15em;
+  transform-origin: top center;
+  width: 150%;
+  height: 100%;
+  background-color: #555;
+  rotate: 5deg;
+  z-index: 0;
+}
+.projects > * {
+  position: relative;
+  z-index: 1;
+}
+
+.projects > h1,
+p {
+  text-align: center;
+}
+
+.projectUl {
+  display: grid;
+  width: 90%;
+  margin: 2em auto;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
+}
