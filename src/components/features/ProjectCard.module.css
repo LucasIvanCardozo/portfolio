@@ -5,11 +5,11 @@
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 1rem;
   overflow: hidden;
-  transition: all 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .container:hover {
-  transform: translateY(-8px);
+  transform: translateY(-2px);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
   border-color: rgba(99, 102, 241, 0.3);
 }
@@ -39,16 +39,15 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(
-    to bottom,
-    transparent 0%,
-    rgba(99, 102, 241, 0.8) 100%
-  );
+  background: linear-gradient(to top, rgba(70, 63, 170, 0.3) 0%, rgba(99, 102, 241, 0.2) 30%, transparent 100%);
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
+  padding-bottom: 2rem;
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .container:hover .imageOverlay {
@@ -56,13 +55,38 @@
 }
 
 .viewProject {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
   color: #fff;
   font-weight: 600;
-  font-size: 1rem;
-  padding: 0.75rem 1.5rem;
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 2rem;
-  backdrop-filter: blur(4px);
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 0.6rem 1.25rem;
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.8) 0%, rgba(139, 92, 246, 0.8) 100%);
+  border-radius: 0.25rem;
+  transform: translateY(15px);
+  opacity: 0;
+  transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+}
+
+.viewProject svg {
+  width: 1rem;
+  height: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.container:hover .viewProject {
+  transform: translateY(0);
+  opacity: 1;
+  transition-delay: 0.08s;
+  box-shadow: 0 6px 25px rgba(99, 102, 241, 0.5);
+}
+
+.container:hover .viewProject svg {
+  transform: scale(1.15);
 }
 
 .content {
@@ -114,6 +138,12 @@
   object-fit: contain;
 }
 
+.links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 .link {
   display: inline-flex;
   align-items: center;
@@ -131,13 +161,23 @@
 
 .link:hover {
   color: #a5b4fc;
-  gap: 0.75rem;
 }
 
-.link svg {
-  transition: transform 0.2s ease;
+.linkGitHub {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #94a3b8;
+  transition: all 0.2s ease;
+  padding: 0.4rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.5rem;
+  cursor: pointer;
 }
 
-.link:hover svg {
-  transform: translate(3px, -3px);
+.linkGitHub:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
 }

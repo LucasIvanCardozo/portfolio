@@ -2,13 +2,13 @@ import styles from './App.module.css'
 import { MeDescription } from './components/features/MeDescription'
 import { MeComponent } from './components/features/MeComponent'
 import { Skills } from './components/features/Skills'
-import { ProyectCard } from './components/features/ProyectCard'
+import { ProjectCard } from './components/features/ProjectCard'
 import { Contact } from './components/features/Contact'
 import { Footer } from './components/layouts/Footer'
-import { proyectsRepository } from './lib/db/repository/proyects'
+import { projectsRepository } from './lib/db/repository/projects'
 
 export default function App() {
-  const proyects = proyectsRepository.getAll()
+  const projects = projectsRepository.getAll()
   
   return (
     <>
@@ -29,8 +29,8 @@ export default function App() {
             Some of the projects I've worked on
           </p>
           <ul className={styles.projectUl}>
-            {proyects.map((proyect, index) => (
-              <ProyectCard key={index} proyect={proyect} wrapper="li" />
+            {projects.map((project, index) => (
+              <ProjectCard key={index} project={project} wrapper="li" />
             ))}
           </ul>
         </div>
