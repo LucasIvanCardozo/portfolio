@@ -7,10 +7,10 @@ export const Footer = () => {
     <footer className={styles.container}>
       <div className={styles.content}>
         <p className={styles.copyright}>
-          © {currentYear} Lucas Iván Cardozo. Todos los derechos reservados.
+          © {currentYear} Lucas Iván Cardozo. All rights reserved.
         </p>
         <p className={styles.credits}>
-          Construido con 
+          Built with 
           <a 
             href="https://react.dev/" 
             target="_blank" 
@@ -18,7 +18,7 @@ export const Footer = () => {
           >
             React
           </a>
-          y 
+          and 
           <a 
             href="https://vitejs.dev/" 
             target="_blank" 
@@ -26,7 +26,7 @@ export const Footer = () => {
           >
             Vite
           </a>
-          , desplegado en 
+          , deployed on 
           <a 
             href="https://vercel.com/" 
             target="_blank" 
