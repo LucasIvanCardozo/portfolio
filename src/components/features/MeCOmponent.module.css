@@ -1,5 +1,5 @@
 .container {
-  font-size: 14px;
+  font-size: 18px;
   position: relative;
   width: 16em;
   margin: 0;
@@ -83,28 +83,28 @@
 /* Mobile: smaller size */
 @media (max-width: 768px) {
   .container {
-    font-size: 13px;
+    font-size: 16px;
     width: 14em;
   }
-  
+
   .ul {
     gap: 0.5em;
     bottom: -0.2em;
     left: -2em;
   }
-  
+
   .ul > li {
     width: 1.4em;
   }
-  
+
   .ul > li:nth-child(2) {
     margin-left: 0.5em;
   }
-  
+
   .ul > li:nth-child(3) {
     margin-left: 1.8em;
   }
-  
+
   .ul > li:nth-child(4) {
     margin-left: 3.8em;
   }
@@ -116,25 +116,25 @@
     font-size: 16px;
     width: 18em;
   }
-  
+
   .ul {
     gap: 0.7em;
     bottom: -0.4em;
     left: -3em;
   }
-  
+
   .ul > li {
     width: 1.6em;
   }
-  
+
   .ul > li:nth-child(2) {
     margin-left: 0.7em;
   }
-  
+
   .ul > li:nth-child(3) {
     margin-left: 2.5em;
   }
-  
+
   .ul > li:nth-child(4) {
     margin-left: 5em;
   }
