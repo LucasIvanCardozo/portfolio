@@ -1,5 +1,5 @@
 .main {
-  background-image: url('/src/assets/images/mainBackground.png');
+  background-image: var(--background-url, url('/images/mainBackground.png'));
   background-size: cover;
   background-position: center;
   display: flex;

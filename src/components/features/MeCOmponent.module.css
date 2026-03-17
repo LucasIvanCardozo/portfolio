@@ -5,7 +5,7 @@
   margin-left: 3em;
   margin-bottom: 2em;
   aspect-ratio: 227/298;
-  background-image: url('/src/assets/images/meBackground.svg');
+  background-image: var(--background-url, url('/images/meBackground.svg'));
   background-size: contain;
   filter: drop-shadow(1px 1px 3px #0003);
 }
