@@ -5,11 +5,13 @@ import { ProyectCard } from './components/features/ProyectCard'
 import { Footer } from './components/layouts/Footer'
 import { proyectsRepository } from './lib/db/repository/proyects'
 
+const BASE_URL = import.meta.env.BASE_URL
+
 export default function App() {
   const proyects = proyectsRepository.getAll()
   return (
     <>
-      <main className={styles.main}>
+      <main className={styles.main} style={{ '--background-url': `url(${BASE_URL}images/mainBackground.png)` } as React.CSSProperties}>
         <MeDescription />
         <MeComponent />
       </main>
