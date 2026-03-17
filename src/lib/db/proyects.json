@@ -2,31 +2,31 @@
   "data": [
     {
       "title": "Helados Italia",
-      "description": "Mi primer proyecto profesional. Una página web interactiva para una heladería local, desarrollada desde cero con HTML, CSS y JavaScript vanilla. Incluye catálogo de productos, información de contacto y diseño responsive.",
+      "description": "My first professional project. An interactive website for a local ice cream shop, developed from scratch with HTML, CSS, and vanilla JavaScript. Includes product catalog, contact information, and responsive design.",
       "urlProyect": "https://lucasivancardozo.github.io/heladositalia/",
       "techs": ["HTML", "CSS", "JavaScript"]
     },
     {
       "title": "Bowling de Paso",
-      "description": "Sitio web con formato SSR desarrollado para una empresa de entretenimiento. Implementé una interfaz moderna y dinámica utilizando React con Vite, cumpliendo con todos los requerimientos del cliente.",
+      "description": "Website with SSR format developed for an entertainment company. I implemented a modern and dynamic interface using React with Vite, meeting all client requirements.",
       "urlProyect": "https://lucasivancardozo.github.io/bowling-de-paso/",
       "techs": ["React", "Vite", "CSS", "JSX"]
     },
     {
       "title": "App Restaurant",
-      "description": "Aplicación de escritorio para gestión de restaurantes. Desarrollada en C# con Windows Forms, incluye gestión de clientes, seguimiento de ingresos, reservaciones y base de datos SQLite para almacenamiento local.",
+      "description": "Desktop application for restaurant management. Developed in C# with Windows Forms, includes client management, income tracking, reservations, and SQLite database for local storage.",
       "urlProyect": "#",
       "techs": ["C#", "SQLite", "Visual Studio"]
     },
     {
       "title": "Tu Amigo FI",
-      "description": "Plataforma web completa para gestión financiera personal. Construida con Next.js y PostgreSQL, permite registrar gastos, ingresos, categorizar transacciones y generar reportes. Integración con Cloudinary para almacenamiento de imágenes.",
+      "description": "Complete web platform for personal financial management. Built with Next.js and PostgreSQL, allows recording expenses, income, categorizing transactions, and generating reports. Integration with Cloudinary for image storage.",
       "urlProyect": "https://tuamigofi.ar/",
       "techs": ["Next.js", "PostgreSQL", "Cloudinary", "TypeScript"]
     },
     {
       "title": "Carta QR",
-      "description": "Aplicación web de cartas digitales QR para restaurantes. Permite a los clientes visualizar el menú escaneando un código QR. Desarrollada con Next.js y PostgreSQL, con panel de administración para gestionar el menú.",
+      "description": "QR digital menu web application for restaurants. Allows customers to view the menu by scanning a QR code. Developed with Next.js and PostgreSQL, with an admin panel to manage the menu.",
       "urlProyect": "https://carta-qr-olive.vercel.app/mcdonalds/menu",
       "techs": ["Next.js", "PostgreSQL", "TypeScript"]
     }

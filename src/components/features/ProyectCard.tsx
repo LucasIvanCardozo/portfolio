@@ -32,11 +32,11 @@ export const ProyectCard = ({ proyect, wrapper: Wrapper = 'div' }: { proyect: Pr
       <div className={styles.imageContainer}>
         <img 
           src={`${BASE_URL}images/proyects/${title.toLowerCase().replaceAll(' ', '')}.png`} 
-          alt={`Captura de pantalla del proyecto ${title}`} 
+          alt={`Screenshot of ${title} project`}
           loading="lazy"
         />
         <div className={styles.imageOverlay}>
-          <span className={styles.viewProject}>Ver Proyecto</span>
+          <span className={styles.viewProject}>View Project</span>
         </div>
       </div>
       
@@ -68,7 +68,7 @@ export const ProyectCard = ({ proyect, wrapper: Wrapper = 'div' }: { proyect: Pr
           rel="noopener noreferrer"
           className={styles.link}
         >
-          Visitar Sitio
+          Visit Site
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
             <polyline points="15 3 21 3 21 9"/>
