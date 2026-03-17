@@ -1,13 +1,18 @@
 .container {
-  font-size: 15px;
+  font-size: 14px;
   position: relative;
-  width: 20em;
-  margin-left: 3em;
-  margin-bottom: 2em;
+  width: 16em;
+  margin: 0;
   aspect-ratio: 227/298;
-  background-image: var(--background-url, url('/images/meBackground.svg'));
+  background-image: url('/portfolio/images/meBackground.svg');
   background-size: contain;
-  filter: drop-shadow(1px 1px 3px #0003);
+  filter: drop-shadow(0 8px 25px rgba(0, 0, 0, 0.15));
+  transition: filter 0.3s ease;
+  justify-self: center;
+}
+
+.container:hover {
+  filter: drop-shadow(0 12px 35px rgba(0, 0, 0, 0.2));
 }
 
 .me {
@@ -19,9 +24,9 @@
 .ul {
   position: absolute;
   display: flex;
-  gap: 0.8em;
-  bottom: -0.5em;
-  left: -3em;
+  gap: 0.6em;
+  bottom: -0.3em;
+  left: -2.5em;
   flex-direction: column;
   animation-name: iconListAnimation;
   animation-duration: 2s;
@@ -31,33 +36,34 @@
 
 .ul > li {
   position: relative;
-  width: 1.8em;
+  width: 1.5em;
   aspect-ratio: 1 / 1;
-  filter: drop-shadow(1px 1px 1px #0004);
-  transition: scale 0.2s ease;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.15));
+  transition: all 0.3s ease;
   animation: iconAnimation 0.3s ease-in-out alternate 2;
   animation-delay: 2.2s;
 }
 
 .ul > li:hover {
   scale: 1.2;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.25));
 }
 
 .ul > li:nth-child(2) {
-  margin-top: 0.5em;
-  margin-left: 0.8em;
+  margin-top: 0.4em;
+  margin-left: 0.6em;
   animation-delay: 2.4s;
 }
 
 .ul > li:nth-child(3) {
-  margin-top: 0.3em;
-  margin-left: 2.7em;
+  margin-top: 0.25em;
+  margin-left: 2.2em;
   animation-delay: 2.6s;
 }
 
 .ul > li:nth-child(4) {
   margin-top: -0.1em;
-  margin-left: 5.5em;
+  margin-left: 4.5em;
   animation-delay: 2.8s;
 }
 
@@ -74,21 +80,69 @@
   object-fit: contain;
 }
 
-@media (min-width: 768px) {
+/* Mobile: smaller size */
+@media (max-width: 768px) {
   .container {
-    font-size: 16px;
+    font-size: 13px;
+    width: 14em;
+  }
+  
+  .ul {
+    gap: 0.5em;
+    bottom: -0.2em;
+    left: -2em;
+  }
+  
+  .ul > li {
+    width: 1.4em;
+  }
+  
+  .ul > li:nth-child(2) {
+    margin-left: 0.5em;
+  }
+  
+  .ul > li:nth-child(3) {
+    margin-left: 1.8em;
+  }
+  
+  .ul > li:nth-child(4) {
+    margin-left: 3.8em;
   }
 }
 
+/* Desktop: larger size */
 @media (min-width: 1024px) {
   .container {
-    font-size: 18px;
+    font-size: 16px;
+    width: 18em;
+  }
+  
+  .ul {
+    gap: 0.7em;
+    bottom: -0.4em;
+    left: -3em;
+  }
+  
+  .ul > li {
+    width: 1.6em;
+  }
+  
+  .ul > li:nth-child(2) {
+    margin-left: 0.7em;
+  }
+  
+  .ul > li:nth-child(3) {
+    margin-left: 2.5em;
+  }
+  
+  .ul > li:nth-child(4) {
+    margin-left: 5em;
   }
 }
 
 @media (min-width: 1280px) {
   .container {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
