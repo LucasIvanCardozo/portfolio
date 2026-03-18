@@ -3,6 +3,7 @@ import { MeDescription } from './components/features/MeDescription'
 import { MeComponent } from './components/features/MeComponent'
 import { Skills } from './components/features/Skills'
 import { ProjectCard } from './components/features/ProjectCard'
+import { GitHubActivity } from './components/features/GitHubActivity'
 import { Contact } from './components/features/Contact'
 import { Footer } from './components/layouts/Footer'
 import { projectsRepository } from './lib/db/repository/projects'
@@ -35,6 +36,9 @@ export default function App() {
           </ul>
         </div>
       </section>
+      
+      {/* GitHub Activity Section */}
+      <GitHubActivity />
       
       {/* Contact Section */}
       <Contact />
