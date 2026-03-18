@@ -25,13 +25,18 @@
   text-align: center;
   margin-bottom: 0.5rem;
   color: #fff;
+  background: linear-gradient(135deg, #fff 0%, #c7d2fe 50%, #a78bfa 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .subtitle {
   text-align: center;
-  color: #94a3b8;
-  font-size: 1rem;
+  color: #cbd5e1;
+  font-size: 1.05rem;
   margin-bottom: 2.5rem;
+  line-height: 1.6;
 }
 
 .content {
@@ -50,28 +55,31 @@
   display: flex;
   align-items: flex-start;
   gap: 0.875rem;
-  padding: 1rem;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 1.25rem;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 0.75rem;
   transition: all 0.3s ease;
 }
 
 .infoItem:hover {
-  background: rgba(255, 255, 255, 0.06);
-  border-color: rgba(139, 92, 246, 0.3);
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(139, 92, 246, 0.4);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
 }
 
 .iconWrapper {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2.75rem;
+  height: 2.75rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(139, 92, 246, 0.15);
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.25) 0%, rgba(99, 102, 241, 0.2) 100%);
   border-radius: 0.6rem;
-  color: #a78bfa;
+  color: #c4b5fd;
   flex-shrink: 0;
+  border: 1px solid rgba(139, 92, 246, 0.3);
 }
 
 .infoContent {
@@ -85,14 +93,15 @@
   font-size: 0.7rem;
   color: #94a3b8;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
-  margin-bottom: 0.25rem;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.35rem;
+  font-weight: 600;
 }
 
 .value {
   display: block;
-  color: #e2e8f0;
-  font-size: 0.875rem;
+  color: #f1f5f9;
+  font-size: 0.95rem;
   font-weight: 500;
   text-decoration: none;
   transition: color 0.2s ease;
@@ -100,20 +109,22 @@
 }
 
 a.value:hover {
-  color: #a78bfa;
+  color: #c4b5fd;
 }
 
 .social {
   text-align: center;
-  padding: 1.5rem;
-  background: rgba(255, 255, 255, 0.02);
+  padding: 1.75rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 1rem;
 }
 
 .socialTitle {
-  color: #94a3b8;
-  font-size: 0.9rem;
-  margin-bottom: 1rem;
+  color: #cbd5e1;
+  font-size: 0.95rem;
+  margin-bottom: 1.25rem;
+  font-weight: 500;
 }
 
 .socialLinks {
@@ -124,21 +135,22 @@ a.value:hover {
 }
 
 .socialLink {
-  width: 3rem;
-  height: 3rem;
+  width: 3.25rem;
+  height: 3.25rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 0.6rem;
   transition: all 0.3s ease;
 }
 
 .socialLink:hover {
-  background: rgba(139, 92, 246, 0.2);
-  border-color: rgba(139, 92, 246, 0.4);
+  background: rgba(139, 92, 246, 0.25);
+  border-color: rgba(139, 92, 246, 0.5);
   transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
 .socialLink img {
