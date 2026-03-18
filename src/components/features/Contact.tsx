@@ -89,11 +89,14 @@ export const Contact = () => {
           <div className={styles.social}>
             <p className={styles.socialTitle}>You can also find me on:</p>
             <div className={styles.socialLinks}>
-              {socialList.map(({ href, name }, index) => (
-                <a key={index} href={href} target="_blank" rel="noopener noreferrer" className={styles.socialLink} aria-label={`Visit my ${name}`}>
-                  <img src={`/portfolio/icons/${name}.svg`} alt={name} loading="lazy" />
-                </a>
-              ))}
+              {socialList.map(({ href, name }, index) => {
+                const iconName = name === 'github' ? 'githubWhite' : name
+                return (
+                  <a key={index} href={href} target="_blank" rel="noopener noreferrer" className={styles.socialLink} aria-label={`Visit my ${name}`}>
+                    <img src={`/portfolio/icons/${iconName}.svg`} alt={name} loading="lazy" />
+                  </a>
+                )
+              })}
             </div>
           </div>
         </div>
