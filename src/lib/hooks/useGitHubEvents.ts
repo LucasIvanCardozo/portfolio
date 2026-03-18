@@ -16,7 +16,7 @@ export function useGitHubEvents() {
   useEffect(() => {
     async function fetchEvents() {
       const token = import.meta.env.VITE_GITHUB_TOKEN
-      
+
       if (!token) {
         setError('GitHub token not configured')
         setLoading(false)
@@ -28,7 +28,7 @@ export function useGitHubEvents() {
         const today = new Date()
         const oneYearAgo = new Date(today)
         oneYearAgo.setFullYear(oneYearAgo.getFullYear() - 1)
-        
+
         // Format as ISO 8601 with timezone (required by GraphQL)
         const fromDate = oneYearAgo.toISOString()
         const toDate = today.toISOString()
@@ -37,7 +37,7 @@ export function useGitHubEvents() {
         const response = await fetch('https://api.github.com/graphql', {
           method: 'POST',
           headers: {
-            'Authorization': `Bearer ${token}`,
+            Authorization: `Bearer ${token}`,
             'Content-Type': 'application/json',
           },
           body: JSON.stringify({
@@ -61,9 +61,9 @@ export function useGitHubEvents() {
             variables: {
               username: GITHUB_USERNAME,
               from: fromDate,
-              to: toDate
-            }
-          })
+              to: toDate,
+            },
+          }),
         })
 
         if (!response.ok) {
@@ -71,20 +71,20 @@ export function useGitHubEvents() {
         }
 
         const data = await response.json()
-        
+
         if (data.errors) {
           throw new Error(data.errors[0].message)
         }
 
         const calendar = data.data.user.contributionsCollection.contributionCalendar
-        
+
         // Flatten weeks into days
         const days: CommitDay[] = []
         calendar.weeks.forEach((week: { contributionDays: { date: string; contributionCount: number }[] }) => {
           week.contributionDays.forEach((day) => {
             days.push({
               date: day.date,
-              count: day.contributionCount
+              count: day.contributionCount,
             })
           })
         })
