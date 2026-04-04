@@ -11,20 +11,24 @@ export const MeDescription = () => {
           </h1>
           <h2 className={styles.title}>Full Stack Developer & Software Engineer</h2>
           <p className={styles.description}>
-            Future Computer Engineer passionate about technology with the ability to transform ideas or problems into efficient solutions. 
-            I specialize in creating tools that optimize and simplify my clients' work.
+            <strong>Full Stack Developer</strong> specializing in the <strong>React, Next.js, and TypeScript</strong> ecosystem. I build modern, scalable web
+            applications with robust frontend architecture and solid backend using <strong>PostgreSQL</strong>.
           </p>
           <p className={styles.description}>
-            I'm currently studying Systems Engineering at the National University of Mar del Plata, 
-            and I'm looking for opportunities to apply my knowledge in challenging projects.
+            Currently studying <strong>Systems Engineering</strong> at Universidad Nacional de Mar del Plata. I&apos;ve built complex web applications with
+            transaction management, reporting, and intelligent features. I also created QR solutions for restaurants and interactive systems{' '}
+            <strong>designed to scale for 1000+ users</strong>.
+          </p>
+          <p className={styles.description}>
+            <strong>Tech Stack:</strong> React · Next.js · TypeScript · Node.js · PostgreSQL · Vite · Vercel
           </p>
           <div className={styles.stats}>
             <div className={styles.stat}>
-              <span className={styles.statNumber}>2+</span>
+              <span className={styles.statNumber}>3+</span>
               <span className={styles.statLabel}>Years of experience</span>
             </div>
             <div className={styles.stat}>
-              <span className={styles.statNumber}>5+</span>
+              <span className={styles.statNumber}>4+</span>
               <span className={styles.statLabel}>Projects completed</span>
             </div>
             <div className={styles.stat}>

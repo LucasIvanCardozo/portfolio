@@ -27,6 +27,13 @@
       "urlProject": "https://carta-qr-olive.vercel.app/mcdonalds/menu",
       "urlGitHub": "https://github.com/LucasIvanCardozo/carta-qr",
       "techs": ["Next.js", "PostgreSQL", "TypeScript"]
+    },
+    {
+      "title": "Boston automotores",
+      "description": "Professional car dealership website with a vehicle catalog, filtering options, and direct customer inquiries. Includes an admin panel to manage inventory and handle client messages.",
+      "urlProject": "https://boston-automotores.vercel.app",
+      "urlGitHub": "https://github.com/LucasIvanCardozo/Boston-Automotores",
+      "techs": ["Next.js", "PostgreSQL", "TypeScript"]
     }
   ]
 }
