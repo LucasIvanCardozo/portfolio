@@ -23,7 +23,7 @@
       "title": "Pathfinder",
       "description": "Web application for tabletop RPG battle management (Pathfinder / D&D 5e). Canvas-based maps with Konva, initiative tracking, conditions, spells and scenario persistence. Layer system, PostgreSQL persistence, multi-user. High-performance canvas rendering with Konva.js. Layered architecture.",
       "urlProject": "https://pathfinder-two-pi.vercel.app/",
-      "urlGitHub": "https://github.com/LucasIvanCardozo/pathfinder",
+      "urlGitHub": "https://github.com/LucasIvanCardozo/pathfinder-",
       "techs": ["Next.js", "React", "TypeScript", "Konva", "Prisma", "PostgreSQL", "Zod"],
       "featured": false,
       "period": "2026"
