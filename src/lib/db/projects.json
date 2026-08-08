@@ -1,39 +1,58 @@
 {
   "data": [
     {
-      "title": "Helados Italia",
-      "description": "My first professional project. An interactive website for a local ice cream shop, developed from scratch with HTML, CSS, and vanilla JavaScript. Includes product catalog, contact information, and responsive design.",
-      "urlProject": "https://lucasivancardozo.github.io/heladositalia/",
-      "urlGitHub": "https://github.com/LucasIvanCardozo/heladositalia",
-      "techs": ["HTML", "CSS", "JavaScript"]
-    },
-    {
-      "title": "Bowling de Paso",
-      "description": "Website with SSR format developed for an entertainment company. I implemented a modern and dynamic interface using React with Vite, meeting all client requirements.",
-      "urlProject": "https://lucasivancardozo.github.io/bowling-de-paso/",
-      "urlGitHub": "https://github.com/LucasIvanCardozo/bowling-de-paso",
-      "techs": ["React", "Vite", "CSS", "JSX"]
-    },
-    {
-      "title": "Tu Amigo FI",
-      "description": "Complete web platform for personal financial management. Built with Next.js and PostgreSQL, allows recording expenses, income, categorizing transactions, and generating reports. Integration with Cloudinary for image storage.",
-      "urlProject": "https://tuamigofi.ar/",
-      "urlGitHub": "https://github.com/LucasIvanCardozo/tuAmigoFI",
-      "techs": ["Next.js", "PostgreSQL", "Cloudinary", "TypeScript"]
-    },
-    {
       "title": "Carta QR",
-      "description": "QR digital menu web application for restaurants. Allows customers to view the menu by scanning a QR code. Developed with Next.js and PostgreSQL, with an admin panel to manage the menu.",
+      "description": "Multi-tenant SaaS platform for restaurants with QR menu, in-table ordering, cash-register management and analytics. Layered architecture (Repository → Use Case → Server Action) using Next.js 16 Server Actions. Realtime via Soketi/Pusher WebSockets, Auth.js + Google OAuth + RBAC, Zod validation, and a testing suite with Vitest + Playwright + axe-core + Testcontainers.",
       "urlProject": "https://carta-qr-olive.vercel.app/mcdonalds/menu",
       "urlGitHub": "https://github.com/LucasIvanCardozo/carta-qr",
-      "techs": ["Next.js", "PostgreSQL", "TypeScript"]
+      "techs": ["Next.js", "React", "TypeScript", "Prisma", "PostgreSQL", "Auth.js", "Zod"],
+      "featured": true,
+      "period": "2025 – present"
     },
     {
       "title": "Boston automotores",
-      "description": "Professional car dealership website with a vehicle catalog, filtering options, and direct customer inquiries. Includes an admin panel to manage inventory and handle client messages.",
+      "description": "Public website + admin panel for a car dealership (real client, in active production use). Vehicle catalog with brand, price and mileage filters; inventory management, technical sheets, lead capture and email notifications.",
       "urlProject": "https://boston-automotores.vercel.app",
       "urlGitHub": "https://github.com/LucasIvanCardozo/Boston-Automotores",
-      "techs": ["Next.js", "PostgreSQL", "TypeScript"]
+      "techs": ["Next.js", "React", "TypeScript", "Prisma", "PostgreSQL", "Cloudinary", "JWT"],
+      "featured": true,
+      "period": "2026"
+    },
+    {
+      "title": "Pathfinder",
+      "description": "Web application for tabletop RPG battle management (Pathfinder / D&D 5e). Canvas-based maps with Konva, initiative tracking, conditions, spells and scenario persistence. Layer system, PostgreSQL persistence, multi-user. High-performance canvas rendering with Konva.js. Layered architecture.",
+      "urlProject": "https://pathfinder-two-pi.vercel.app/",
+      "urlGitHub": "https://github.com/LucasIvanCardozo/pathfinder",
+      "techs": ["Next.js", "React", "TypeScript", "Konva", "Prisma", "PostgreSQL", "Zod"],
+      "featured": false,
+      "period": "2026"
+    },
+    {
+      "title": "Tu Amigo FI",
+      "description": "Collaborative platform for UNMdP Engineering students. Share practical material, midterm exams, answers and comments across degrees and years. Complex domain modeling: degrees, study plans, terms, prerequisites. Google OAuth, user moderation, file uploads, search and department filtering. Built with real student feedback gathered during usage.",
+      "urlProject": "https://tuamigofi.ar/",
+      "urlGitHub": "https://github.com/LucasIvanCardozo/tuAmigoFI",
+      "techs": ["Next.js", "React", "TypeScript", "Prisma", "PostgreSQL", "NextAuth", "Cloudinary"],
+      "featured": false,
+      "period": "2024 – 2025"
+    },
+    {
+      "title": "Bowling de Paso",
+      "description": "Public website for a bowling venue (real client, in active production use). Responsive design, WhatsApp channel integration, LocalBusiness schema cards and optimised OpenGraph. Technical SEO: JSON-LD, sitemap, metadata. Image optimisation and performance tuning.",
+      "urlProject": "https://lucasivancardozo.github.io/bowling-de-paso/",
+      "urlGitHub": "https://github.com/LucasIvanCardozo/bowling-de-paso",
+      "techs": ["React", "Vite", "CSS Modules", "GitHub Pages"],
+      "featured": true,
+      "period": "2025"
+    },
+    {
+      "title": "Helados Italia",
+      "description": "First professional project (kept as a learning milestone). Static website for a local ice cream shop, built from scratch with HTML, CSS, and vanilla JavaScript. Product catalog and responsive design.",
+      "urlProject": "https://lucasivancardozo.github.io/heladositalia/",
+      "urlGitHub": "https://github.com/LucasIvanCardozo/heladositalia",
+      "techs": ["HTML", "CSS", "JavaScript"],
+      "featured": false,
+      "period": "2022 – 2023"
     }
   ]
 }

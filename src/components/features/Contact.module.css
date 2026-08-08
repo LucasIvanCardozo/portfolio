@@ -5,7 +5,7 @@
 }
 
 .section::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -163,20 +163,20 @@ a.value:hover {
   .section {
     padding: 3rem 0.875rem;
   }
-  
+
   .info {
     grid-template-columns: 1fr;
   }
-  
+
   .infoItem {
     padding: 0.875rem;
   }
-  
+
   .socialLink {
     width: 2.75rem;
     height: 2.75rem;
   }
-  
+
   .socialLink img {
     width: 1.25rem;
     height: 1.25rem;

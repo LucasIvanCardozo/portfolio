@@ -1,0 +1,19 @@
+{
+  "data": [
+    {
+      "id": "ingenieria-informatica",
+      "degree": "Computer Engineering",
+      "institution": "Universidad Nacional de Mar del Plata (UNMdP)",
+      "period": "2019 – present",
+      "status": "in_progress",
+      "progress": 60
+    },
+    {
+      "id": "tecnico-alimentos",
+      "degree": "Food Technology Technician",
+      "institution": "Secondary Technical Education",
+      "period": "High school",
+      "status": "completed"
+    }
+  ]
+}

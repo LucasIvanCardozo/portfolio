@@ -8,4 +8,6 @@ export type Project = {
   urlProject: string
   urlGitHub: string
   techs: string[]
+  featured: boolean
+  period: string
 }

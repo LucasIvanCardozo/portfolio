@@ -1,6 +1,15 @@
+export type SkillCategory =
+  | 'languages'
+  | 'frontend'
+  | 'backend'
+  | 'database'
+  | 'security'
+  | 'testing'
+  | 'tools'
+
 export interface Skill {
   name: string
-  category: 'frontend' | 'backend' | 'database' | 'languages' | 'tools'
+  category: SkillCategory
 }
 
 export interface SkillsData {

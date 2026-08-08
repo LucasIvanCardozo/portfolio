@@ -3,8 +3,8 @@
   position: relative;
   width: 16em;
   margin: 0;
-  aspect-ratio: 227/298;
-  background-image: url('/portfolio/images/meBackground.svg');
+  aspect-ratio: 227 / 298;
+  background-image: url("/portfolio/images/meBackground.svg");
   background-size: contain;
   filter: drop-shadow(0 8px 25px rgba(0, 0, 0, 0.15));
   transition: filter 0.3s ease;

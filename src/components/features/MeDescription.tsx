@@ -9,31 +9,32 @@ export const MeDescription = () => {
           <h1 className={styles.name}>
             Lucas <span className={styles.highlight}>Cardozo</span>
           </h1>
-          <h2 className={styles.title}>Full Stack Developer & Software Engineer</h2>
-          <p className={styles.description}>
-            <strong>Full Stack Developer</strong> specializing in the <strong>React, Next.js, and TypeScript</strong> ecosystem. I build modern, scalable web
-            applications with robust frontend architecture and solid backend using <strong>PostgreSQL</strong>.
+          <h2 className={styles.title}>Full-Stack TypeScript Developer · React · Next.js</h2>
+          <p className={styles.tagline}>
+            Three products in production. Still finishing the degree.
           </p>
           <p className={styles.description}>
-            Currently studying <strong>Systems Engineering</strong> at Universidad Nacional de Mar del Plata. I&apos;ve built complex web applications with
-            transaction management, reporting, and intelligent features. I also created QR solutions for restaurants and interactive systems{' '}
-            <strong>designed to scale for 1000+ users</strong>.
+            Computer Engineering student at UNMdP, self-taught and product-oriented. Designs and
+            builds complete web applications with TypeScript, React, Next.js and Node.js, from data
+            modeling to UI implementation. Delivered products to real clients and currently
+            developing a SaaS platform for launch.
           </p>
           <p className={styles.description}>
-            <strong>Tech Stack:</strong> React · Next.js · TypeScript · Node.js · PostgreSQL · Vite · Vercel
+            <strong>Tech Stack:</strong> Next.js 16 · React 19 · TypeScript · Prisma 7 · PostgreSQL
+            · Auth.js · Zod
           </p>
           <div className={styles.stats}>
             <div className={styles.stat}>
-              <span className={styles.statNumber}>3+</span>
-              <span className={styles.statLabel}>Years of experience</span>
+              <span className={styles.statNumber}>5</span>
+              <span className={styles.statLabel}>Production projects</span>
             </div>
             <div className={styles.stat}>
-              <span className={styles.statNumber}>4+</span>
-              <span className={styles.statLabel}>Projects completed</span>
+              <span className={styles.statNumber}>3</span>
+              <span className={styles.statLabel}>With real clients</span>
             </div>
             <div className={styles.stat}>
-              <span className={styles.statNumber}>100%</span>
-              <span className={styles.statLabel}>Commitment to quality</span>
+              <span className={styles.statNumber}>1</span>
+              <span className={styles.statLabel}>Multi-tenant SaaS in launch</span>
             </div>
           </div>
           <div className={styles.cta}>

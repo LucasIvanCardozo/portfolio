@@ -1,9 +1,10 @@
 import styles from './App.module.css'
-import { MeDescription } from './components/features/MeDescription'
-import { MeComponent } from './components/features/MeComponent'
-import { Skills } from './components/features/Skills'
-import { ProjectCard } from './components/features/ProjectCard'
 import { Contact } from './components/features/Contact'
+import { Education } from './components/features/Education'
+import { MeComponent } from './components/features/MeComponent'
+import { MeDescription } from './components/features/MeDescription'
+import { ProjectCard } from './components/features/ProjectCard'
+import { Skills } from './components/features/Skills'
 import { Footer } from './components/layouts/Footer'
 import { projectsRepository } from './lib/db/repository/projects'
 
@@ -21,14 +22,17 @@ export default function App() {
       {/* Skills Section */}
       <Skills />
 
+      {/* Education Section */}
+      <Education />
+
       {/* Projects Section */}
       <section id="projects" className={styles.section}>
         <div className={styles.container}>
-          <h2 className={styles.title}>Featured Projects</h2>
-          <p className={styles.subtitle}>Some of the projects I've worked on</p>
+          <h2 className={styles.title}>Projects</h2>
+          <p className={styles.subtitle}>Five products in production, three with real clients.</p>
           <ul className={styles.projectUl}>
-            {projects.map((project, index) => (
-              <ProjectCard key={index} project={project} wrapper="li" />
+            {projects.map((project) => (
+              <ProjectCard key={project.title} project={project} wrapper="li" />
             ))}
           </ul>
         </div>

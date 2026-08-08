@@ -1,60 +1,46 @@
 {
   "data": [
-    {
-      "name": "React",
-      "category": "frontend"
-    },
-    {
-      "name": "Next.js",
-      "category": "frontend"
-    },
-    {
-      "name": "TypeScript",
-      "category": "languages"
-    },
-    {
-      "name": "JavaScript",
-      "category": "languages"
-    },
-    {
-      "name": "HTML5",
-      "category": "frontend"
-    },
-    {
-      "name": "CSS3",
-      "category": "frontend"
-    },
-    {
-      "name": "Node.js",
-      "category": "backend"
-    },
-    {
-      "name": "PostgreSQL",
-      "category": "database"
-    },
-    {
-      "name": "SQLite",
-      "category": "database"
-    },
-    {
-      "name": "Vite",
-      "category": "tools"
-    },
-    {
-      "name": "Git",
-      "category": "tools"
-    },
-    {
-      "name": "Vercel",
-      "category": "tools"
-    },
-    {
-      "name": "C#",
-      "category": "languages"
-    },
-    {
-      "name": "Visual Studio",
-      "category": "tools"
-    }
+    { "name": "TypeScript", "category": "languages" },
+    { "name": "JavaScript (ES2023)", "category": "languages" },
+    { "name": "SQL", "category": "languages" },
+    { "name": "HTML5", "category": "languages" },
+    { "name": "CSS3", "category": "languages" },
+
+    { "name": "React 19", "category": "frontend" },
+    { "name": "Next.js 16", "category": "frontend" },
+    { "name": "Vite", "category": "frontend" },
+    { "name": "React Hook Form", "category": "frontend" },
+    { "name": "Zod", "category": "frontend" },
+    { "name": "CSS Modules", "category": "frontend" },
+    { "name": "Tailwind CSS", "category": "frontend" },
+    { "name": "Konva", "category": "frontend" },
+
+    { "name": "Node.js", "category": "backend" },
+    { "name": "Next.js Server Actions", "category": "backend" },
+    { "name": "Pusher (Soketi)", "category": "backend" },
+    { "name": "Multi-tenant architecture", "category": "backend" },
+
+    { "name": "PostgreSQL", "category": "database" },
+    { "name": "Prisma 7", "category": "database" },
+
+    { "name": "Auth.js / NextAuth", "category": "security" },
+    { "name": "JWT", "category": "security" },
+    { "name": "bcrypt", "category": "security" },
+    { "name": "Tenant-safe routing", "category": "security" },
+
+    { "name": "Vitest", "category": "testing" },
+    { "name": "Playwright", "category": "testing" },
+    { "name": "Lighthouse budgets", "category": "testing" },
+
+    { "name": "Git", "category": "tools" },
+    { "name": "GitHub", "category": "tools" },
+    { "name": "VS Code", "category": "tools" },
+    { "name": "Vim / Neovim", "category": "tools" },
+    { "name": "Biome", "category": "tools" },
+    { "name": "pnpm", "category": "tools" },
+    { "name": "Linux", "category": "tools" },
+    { "name": "Docker", "category": "tools" },
+    { "name": "nginx", "category": "tools" },
+    { "name": "Vercel", "category": "tools" }
   ]
 }

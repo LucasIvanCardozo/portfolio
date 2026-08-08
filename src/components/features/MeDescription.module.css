@@ -59,6 +59,16 @@
   margin-bottom: 1rem;
 }
 
+.tagline {
+  font-size: 1.05rem;
+  font-weight: 500;
+  font-style: italic;
+  color: #6366f1;
+  margin: 0 0 1.25rem;
+  max-width: 100%;
+  line-height: 1.5;
+}
+
 .description {
   font-size: 0.95rem;
   line-height: 1.6;
@@ -144,20 +154,20 @@
   .textContent {
     text-align: center;
   }
-  
+
   .stats {
     justify-content: center;
     gap: 1.5rem;
   }
-  
+
   .stat {
     align-items: center;
   }
-  
+
   .cta {
     justify-content: center;
   }
-  
+
   .description {
     font-size: 1rem;
     text-align: center;

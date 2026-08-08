@@ -6,7 +6,7 @@
 }
 
 .section::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -71,7 +71,7 @@
 }
 
 .categoryCard::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -107,7 +107,7 @@
 }
 
 .categoryTitle::after {
-  content: '';
+  content: "";
   flex: 1;
   height: 1px;
   background: linear-gradient(90deg, rgba(99, 102, 241, 0.3), transparent);
@@ -134,7 +134,7 @@
 }
 
 .skillItem::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: -100%;
@@ -176,7 +176,7 @@
 
 /* Category-specific accent colors */
 .categoryCard:nth-child(1) .categoryTitle::before {
-  content: '';
+  content: "";
   display: inline-block;
   width: 8px;
   height: 8px;
@@ -186,7 +186,7 @@
 }
 
 .categoryCard:nth-child(2) .categoryTitle::before {
-  content: '';
+  content: "";
   display: inline-block;
   width: 8px;
   height: 8px;
@@ -196,7 +196,7 @@
 }
 
 .categoryCard:nth-child(3) .categoryTitle::before {
-  content: '';
+  content: "";
   display: inline-block;
   width: 8px;
   height: 8px;
@@ -206,7 +206,7 @@
 }
 
 .categoryCard:nth-child(4) .categoryTitle::before {
-  content: '';
+  content: "";
   display: inline-block;
   width: 8px;
   height: 8px;
@@ -216,7 +216,7 @@
 }
 
 .categoryCard:nth-child(5) .categoryTitle::before {
-  content: '';
+  content: "";
   display: inline-block;
   width: 8px;
   height: 8px;
