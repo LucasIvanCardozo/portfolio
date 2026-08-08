@@ -19,6 +19,13 @@ dist
 dist-ssr
 *.local
 
+# Large binary artifacts — not source, not for the repo
+*.rar
+*.zip
+*.tar
+*.tar.gz
+public/icons/*.rar
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
