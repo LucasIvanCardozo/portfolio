@@ -3,49 +3,64 @@ import styles from './Contact.module.css'
 
 export const Contact = () => {
   const socialList = socialNetworkRepository.getAll()
+  const emailEntry = socialList.find(({ href }) => href.startsWith('mailto:'))
+  const channels = socialList.filter(({ href }) => !href.startsWith('mailto:'))
+  const emailAddress = emailEntry?.href.replace('mailto:', '') ?? ''
 
   return (
     <section id="contact" className={styles.section}>
       <div className={styles.container}>
-        <h2 className={styles.title}>Let's Work Together</h2>
-        <p className={styles.subtitle}>
-          I'm available for new projects and opportunities. Get in touch!
-        </p>
+        <header className={styles.header}>
+          <h2 className={styles.title}>Let's Work Together</h2>
+          <p className={styles.subtitle}>
+            Three products in production. Currently open to freelance work and full-time
+            opportunities.
+          </p>
+        </header>
 
-        <div className={styles.content}>
-          <div className={styles.info}>
-            <div className={styles.infoItem}>
-              <div className={styles.iconWrapper}>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  aria-hidden="true"
-                >
-                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-                  <polyline points="22,6 12,13 2,6" />
-                </svg>
-              </div>
-              <div className={styles.infoContent}>
-                <span className={styles.label}>Email</span>
-                <a href="mailto:lucasivancardozo27@gmail.com" className={styles.value}>
-                  lucasivancardozo27@gmail.com
-                </a>
-              </div>
+        {emailEntry && (
+          <a
+            href={emailEntry.href}
+            className={styles.primaryCta}
+            aria-label={`Send an email to ${emailAddress}`}
+          >
+            <div className={styles.ctaStatus}>
+              <span className={styles.statusDot} aria-hidden="true">
+                <span className={styles.statusPulse} />
+              </span>
+              <span className={styles.statusText}>Open to work</span>
+              <span className={styles.statusMeta} aria-hidden="true">
+                Mar del Plata, AR · GMT-3
+              </span>
             </div>
 
-            <div className={styles.infoItem}>
-              <div className={styles.iconWrapper}>
+            <div className={styles.ctaBody}>
+              <div className={styles.ctaIcon}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  aria-hidden="true"
+                >
+                  <rect x="2" y="4" width="20" height="16" rx="2.5" />
+                  <path d="m22 7-10 6L2 7" />
+                </svg>
+              </div>
+              <div className={styles.ctaContent}>
+                <span className={styles.ctaLabel}>Email</span>
+                <span className={styles.ctaValue}>{emailAddress}</span>
+              </div>
+              <div className={styles.ctaArrow}>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
@@ -54,91 +69,38 @@ export const Contact = () => {
                   strokeLinejoin="round"
                   aria-hidden="true"
                 >
-                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                  <circle cx="12" cy="10" r="3" />
+                  <line x1="5" y1="12" x2="19" y2="12" />
+                  <polyline points="12 5 19 12 12 19" />
                 </svg>
-              </div>
-              <div className={styles.infoContent}>
-                <span className={styles.label}>Location</span>
-                <span className={styles.value}>Mar del Plata, Argentina</span>
               </div>
             </div>
+          </a>
+        )}
 
-            <div className={styles.infoItem}>
-              <div className={styles.iconWrapper}>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  aria-hidden="true"
-                >
-                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
-                  <line x1="16" y1="2" x2="16" y2="6" />
-                  <line x1="8" y1="2" x2="8" y2="6" />
-                  <line x1="3" y1="10" x2="21" y2="10" />
-                </svg>
-              </div>
-              <div className={styles.infoContent}>
-                <span className={styles.label}>Availability</span>
-                <span className={styles.value}>Immediate</span>
-              </div>
-            </div>
-
-            <div className={styles.infoItem}>
-              <div className={styles.iconWrapper}>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  aria-hidden="true"
-                >
-                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
-                </svg>
-              </div>
-              <div className={styles.infoContent}>
-                <span className={styles.label}>WhatsApp</span>
+        <div className={styles.channelsBlock}>
+          <span className={styles.channelsLabel}>Also reachable on</span>
+          <div className={styles.channels}>
+            {channels.map(({ href, name, label }) => {
+              const iconName = name === 'github' ? 'githubWhite' : name
+              return (
                 <a
-                  href="https://wa.me/5492235319564"
+                  key={name}
+                  href={href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={styles.value}
+                  className={styles.channel}
+                  aria-label={`Open ${label} profile in a new tab`}
                 >
-                  +54 9 223 531 9564
+                  <img
+                    src={`/portfolio/icons/${iconName}.svg`}
+                    alt=""
+                    loading="lazy"
+                    className={styles.channelIcon}
+                  />
+                  <span className={styles.channelName}>{label}</span>
                 </a>
-              </div>
-            </div>
-          </div>
-          <div className={styles.social}>
-            <p className={styles.socialTitle}>You can also find me on:</p>
-            <div className={styles.socialLinks}>
-              {socialList.map(({ href, name }) => {
-                const iconName = name === 'github' ? 'githubWhite' : name
-                return (
-                  <a
-                    key={name}
-                    href={href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={styles.socialLink}
-                    aria-label={`Visit my ${name}`}
-                  >
-                    <img src={`/portfolio/icons/${iconName}.svg`} alt={name} loading="lazy" />
-                  </a>
-                )
-              })}
-            </div>
+              )
+            })}
           </div>
         </div>
       </div>

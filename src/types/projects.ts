@@ -10,4 +10,5 @@ export type Project = {
   techs: string[]
   featured: boolean
   period: string
+  privateSource?: boolean
 }

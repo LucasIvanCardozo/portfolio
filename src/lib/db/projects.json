@@ -7,7 +7,8 @@
       "urlGitHub": "https://github.com/LucasIvanCardozo/carta-qr",
       "techs": ["Next.js", "React", "TypeScript", "Prisma", "PostgreSQL", "Auth.js", "Zod"],
       "featured": true,
-      "period": "2025 – present"
+      "period": "2025 – present",
+      "privateSource": true
     },
     {
       "title": "Boston automotores",
@@ -30,7 +31,7 @@
     {
       "title": "Tu Amigo FI",
       "description": "Collaborative platform for UNMdP Engineering students. Share practical material, midterm exams, answers and comments across degrees and years. Complex domain modeling: degrees, study plans, terms, prerequisites. Google OAuth, user moderation, file uploads, search and department filtering. Built with real student feedback gathered during usage.",
-      "urlProject": "https://tuamigofi.ar/",
+      "urlProject": "https://tu-amigo-fi.vercel.app/",
       "urlGitHub": "https://github.com/LucasIvanCardozo/tuAmigoFI",
       "techs": ["Next.js", "React", "TypeScript", "Prisma", "PostgreSQL", "NextAuth", "Cloudinary"],
       "featured": false,

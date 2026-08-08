@@ -2,19 +2,23 @@
   "data": [
     {
       "href": "mailto:lucasivancardozo27@gmail.com",
-      "name": "gmail"
+      "name": "gmail",
+      "label": "Email"
     },
     {
       "href": "https://www.linkedin.com/in/lucas-ivan-cardozo/",
-      "name": "linkedin"
+      "name": "linkedin",
+      "label": "LinkedIn"
     },
     {
       "href": "https://wa.me/5492235319564",
-      "name": "whatsapp"
+      "name": "whatsapp",
+      "label": "WhatsApp"
     },
     {
       "href": "https://github.com/LucasIvanCardozo",
-      "name": "github"
+      "name": "github",
+      "label": "GitHub"
     }
   ]
 }

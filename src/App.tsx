@@ -19,12 +19,6 @@ export default function App() {
         <MeComponent />
       </section>
 
-      {/* Skills Section */}
-      <Skills />
-
-      {/* Education Section */}
-      <Education />
-
       {/* Projects Section */}
       <section id="projects" className={styles.section}>
         <div className={styles.container}>
@@ -37,6 +31,12 @@ export default function App() {
           </ul>
         </div>
       </section>
+
+      {/* Skills Section */}
+      <Skills />
+
+      {/* Education Section */}
+      <Education />
 
       {/* Contact Section */}
       <Contact />

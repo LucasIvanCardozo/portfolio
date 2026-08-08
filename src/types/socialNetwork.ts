@@ -5,4 +5,5 @@ export type SocialNetworkDB = {
 export type SocialNetwork = {
   href: string
   name: string
+  label: string
 }
