@@ -3,7 +3,7 @@ import { Contact } from './components/features/Contact'
 import { Education } from './components/features/Education'
 import { MeComponent } from './components/features/MeComponent'
 import { MeDescription } from './components/features/MeDescription'
-import { ProjectCard } from './components/features/ProjectCard'
+import { ProjectRow } from './components/features/ProjectRow'
 import { Skills } from './components/features/Skills'
 import { Footer } from './components/layouts/Footer'
 import { projectsRepository } from './lib/db/repository/projects'
@@ -32,7 +32,7 @@ export default function App() {
           <p className={styles.subtitle}>Five products in production, three with real clients.</p>
           <ul className={styles.projectUl}>
             {projects.map((project) => (
-              <ProjectCard key={project.title} project={project} wrapper="li" />
+              <ProjectRow key={project.title} project={project} wrapper="li" />
             ))}
           </ul>
         </div>

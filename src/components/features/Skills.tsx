@@ -6,13 +6,13 @@ const BASE_URL = import.meta.env.BASE_URL
 // Mapeo de nombres de skills a nombres de archivos de iconos
 const iconMapping: Record<string, string> = {
   TypeScript: 'typescript',
-  'JavaScript (ES2023)': 'javascript',
+  JavaScript: 'javascript',
   SQL: 'sql',
   HTML5: 'html',
   CSS3: 'css',
 
-  'React 19': 'react',
-  'Next.js 16': 'next',
+  React: 'react',
+  'Next.js': 'next',
   Vite: 'vite',
   'React Hook Form': 'react-hook-form',
   Zod: 'zod',
@@ -21,23 +21,26 @@ const iconMapping: Record<string, string> = {
   Konva: 'konva',
 
   'Node.js': 'node',
-  'Pusher (Soketi)': 'pusher',
+  Soketi: 'soketi',
+  'Multi-tenant architecture': 'architecture',
 
   PostgreSQL: 'postgresql',
-  'Prisma 7': 'prisma',
+  Prisma: 'prisma',
 
-  'Auth.js / NextAuth': 'authjs',
-
+  'Auth.js': 'authjs',
+  JWT: 'jwt',
+  bcrypt: 'bcrypt',
+  'Tenant-safe routing': 'tenantsaferouting',
   Vitest: 'vitest',
   Playwright: 'playwright',
-
+  'Lighthouse budgets': 'lighthousebudgets',
   Git: 'git',
   GitHub: 'github',
   'VS Code': 'vscode',
-  'Vim / Neovim': 'vim',
+  Neovim: 'neovim',
   Biome: 'biome',
   pnpm: 'pnpm',
-  Docker: 'docker',
+  Linux: 'linux',
   nginx: 'nginx',
   Vercel: 'vercel',
 }
@@ -60,13 +63,12 @@ export const Skills = () => {
   const categories = skillsRepository.getCategories()
 
   return (
-    <section id="skills" className={styles.section}>
+    <section id="skills" className={styles.section} aria-labelledby="skills-heading">
       <div className={styles.container}>
-        <h2 className={styles.title}>Technical Skills</h2>
-        <p className={styles.subtitle}>
-          Skills developed across 5 production projects since 2022 — languages, frameworks,
-          databases, security and tools used in real client work.
-        </p>
+        <h2 id="skills-heading" className={styles.title}>
+          Technical Skills
+        </h2>
+        <p className={styles.subtitle}>The stack used to ship 5 production projects since 2022.</p>
 
         <div className={styles.categories}>
           {categories.map((category) => {
@@ -79,7 +81,7 @@ export const Skills = () => {
                     <li key={skill.name} className={styles.skillItem}>
                       <img
                         src={`${BASE_URL}icons/${getIconFileName(skill.name)}.svg`}
-                        alt={skill.name}
+                        alt=""
                         loading="lazy"
                         className={styles.skillIcon}
                         onError={(e) => {
@@ -91,6 +93,10 @@ export const Skills = () => {
                     </li>
                   ))}
                 </ul>
+                <span className={styles.count}>
+                  {skills.length}
+                  <span className="sr-only"> skills</span>
+                </span>
               </div>
             )
           })}

@@ -1,0 +1,606 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-08-08T05:13:17Z",
+  "title": "Design System: Lucas Cardozo — Portfolio",
+  "extensions": {
+    "colorMeta": {
+      "primary": {
+        "role": "primary",
+        "displayName": "Electric Indigo",
+        "canonical": "#6366f1",
+        "tonalRamp": [
+          "#060846",
+          "#0b0d7c",
+          "#1013b1",
+          "#1519e7",
+          "#474bef",
+          "#7d7ff3",
+          "#b2b4f8",
+          "#e8e8fd"
+        ]
+      },
+      "primary-light": {
+        "role": "primary",
+        "displayName": "Indigo Light",
+        "canonical": "#818cf8",
+        "tonalRamp": [
+          "#040a48",
+          "#071280",
+          "#0a1ab7",
+          "#0d22ee",
+          "#4152f4",
+          "#7884f8",
+          "#b0b7fb",
+          "#e7e9fe"
+        ]
+      },
+      "primary-soft": {
+        "role": "primary",
+        "displayName": "Soft Indigo",
+        "canonical": "#a5b4fc",
+        "tonalRamp": [
+          "#020f4a",
+          "#041a82",
+          "#0625bb",
+          "#0831f3",
+          "#3d5df9",
+          "#768cfa",
+          "#aebbfc",
+          "#e6eafe"
+        ]
+      },
+      "accent": {
+        "role": "secondary",
+        "displayName": "Signal Violet",
+        "canonical": "#a78bfa",
+        "tonalRamp": [
+          "#150349",
+          "#250681",
+          "#3508b9",
+          "#450af1",
+          "#6d3ff7",
+          "#9877f9",
+          "#c2affc",
+          "#ece7fe"
+        ]
+      },
+      "accent-deep": {
+        "role": "secondary",
+        "displayName": "Violet Deep",
+        "canonical": "#8b5cf6",
+        "tonalRamp": [
+          "#190448",
+          "#2c0780",
+          "#3f0ab7",
+          "#520dee",
+          "#7841f5",
+          "#9f78f8",
+          "#c6b0fb",
+          "#eee7fe"
+        ]
+      },
+      "accent-bright": {
+        "role": "secondary",
+        "displayName": "Violet Bright",
+        "canonical": "#a855f7",
+        "tonalRamp": [
+          "#270349",
+          "#450681",
+          "#6309b8",
+          "#810bf0",
+          "#9d40f6",
+          "#ba77f9",
+          "#d6affb",
+          "#f3e7fe"
+        ]
+      },
+      "accent-magenta": {
+        "role": "tertiary",
+        "displayName": "Accent Magenta",
+        "canonical": "#ec4899",
+        "tonalRamp": [
+          "#450726",
+          "#7a0d43",
+          "#af1260",
+          "#e4187c",
+          "#ec499a",
+          "#f27eb7",
+          "#f7b3d5",
+          "#fde8f2"
+        ]
+      },
+      "bg": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "#0f0f1a",
+        "tonalRamp": [
+          "#1c1c31",
+          "#313155",
+          "#47477a",
+          "#5c5c9f",
+          "#8080b6",
+          "#a5a5cb",
+          "#cacae0",
+          "#efeff6"
+        ]
+      },
+      "bg-secondary": {
+        "role": "neutral",
+        "displayName": "Deep Ink",
+        "canonical": "#1a1a2e",
+        "tonalRamp": [
+          "#1c1c31",
+          "#313156",
+          "#46467b",
+          "#5b5ba1",
+          "#7f7fb7",
+          "#a4a4cc",
+          "#c9c9e1",
+          "#efeff6"
+        ]
+      },
+      "bg-deep": {
+        "role": "neutral",
+        "displayName": "Footer Ink",
+        "canonical": "#0a0a0f",
+        "tonalRamp": [
+          "#1f1f2e",
+          "#363651",
+          "#4d4d74",
+          "#656597",
+          "#8787af",
+          "#aaaac6",
+          "#cdcddd",
+          "#f0f0f5"
+        ]
+      },
+      "bg-hero-top": {
+        "role": "neutral",
+        "displayName": "Cream Top",
+        "canonical": "#f8f7f4",
+        "tonalRamp": [
+          "#2f2a1e",
+          "#524b34",
+          "#766b4b",
+          "#9a8c62",
+          "#b1a685",
+          "#c8c0a8",
+          "#dedacc",
+          "#f5f4ef"
+        ]
+      },
+      "bg-hero-bottom": {
+        "role": "neutral",
+        "displayName": "Cream Bottom",
+        "canonical": "#f0efe9",
+        "tonalRamp": [
+          "#2d2b1f",
+          "#504d37",
+          "#736e4e",
+          "#958f66",
+          "#aea888",
+          "#c5c2ab",
+          "#dddbcd",
+          "#f5f4f0"
+        ]
+      },
+      "text": {
+        "role": "neutral",
+        "displayName": "Cool Text",
+        "canonical": "#e2e8f0",
+        "tonalRamp": [
+          "#1a2532",
+          "#2e4059",
+          "#425c7f",
+          "#5678a6",
+          "#7b96bb",
+          "#a1b5cf",
+          "#c8d3e2",
+          "#eef2f6"
+        ]
+      },
+      "text-muted": {
+        "role": "neutral",
+        "displayName": "Muted Slate",
+        "canonical": "#94a3b8",
+        "tonalRamp": [
+          "#1f252e",
+          "#364151",
+          "#4d5d74",
+          "#647997",
+          "#8797af",
+          "#aab6c6",
+          "#cdd4de",
+          "#f0f2f5"
+        ]
+      },
+      "text-strong": {
+        "role": "neutral",
+        "displayName": "Strong",
+        "canonical": "#f1f5f9",
+        "tonalRamp": [
+          "#172636",
+          "#28435e",
+          "#3a6187",
+          "#4b7eb0",
+          "#739bc3",
+          "#9cb8d4",
+          "#c4d5e6",
+          "#edf2f7"
+        ]
+      },
+      "text-on-light": {
+        "role": "neutral",
+        "displayName": "Hero Text",
+        "canonical": "#1a1a2e",
+        "tonalRamp": [
+          "#1c1c31",
+          "#313156",
+          "#46467b",
+          "#5b5ba1",
+          "#7f7fb7",
+          "#a4a4cc",
+          "#c9c9e1",
+          "#efeff6"
+        ]
+      },
+      "text-on-light-muted": {
+        "role": "neutral",
+        "displayName": "Hero Muted",
+        "canonical": "#475569",
+        "tonalRamp": [
+          "#1f252e",
+          "#364150",
+          "#4e5d73",
+          "#657996",
+          "#8797ae",
+          "#aab6c6",
+          "#cdd4dd",
+          "#f0f2f5"
+        ]
+      },
+      "status-success": {
+        "role": "tertiary",
+        "displayName": "Success",
+        "canonical": "#10b981",
+        "tonalRamp": [
+          "#064631",
+          "#0b7c57",
+          "#0fb27c",
+          "#14e7a1",
+          "#47efb7",
+          "#7cf4cc",
+          "#b2f8e1",
+          "#e8fdf6"
+        ]
+      },
+      "status-success-soft": {
+        "role": "tertiary",
+        "displayName": "Mint",
+        "canonical": "#6ee7b7",
+        "tonalRamp": [
+          "#0b422c",
+          "#13744d",
+          "#1ba66f",
+          "#24d890",
+          "#53e3aa",
+          "#85ebc2",
+          "#b7f3db",
+          "#e9fbf4"
+        ]
+      },
+      "status-warning": {
+        "role": "tertiary",
+        "displayName": "Warning",
+        "canonical": "#f59e0b",
+        "tonalRamp": [
+          "#492f03",
+          "#815305",
+          "#b97708",
+          "#f19b0a",
+          "#f7b23f",
+          "#f9c977",
+          "#fcdfaf",
+          "#fef5e7"
+        ]
+      },
+      "status-danger": {
+        "role": "tertiary",
+        "displayName": "Danger",
+        "canonical": "#ef4444",
+        "tonalRamp": [
+          "#460606",
+          "#7c0b0b",
+          "#b20f0f",
+          "#e81414",
+          "#ef4646",
+          "#f47c7c",
+          "#f8b2b2",
+          "#fde8e8"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero .name only — the single most prominent string on the site."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Default h1 size. Reserved; the hero overrides it with Display."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Section titles (Skills, Education, Projects, Contact) — rendered as a white-to-indigo gradient text fill."
+      },
+      "subtitle": {
+        "displayName": "Subtitle",
+        "purpose": "Hero subhead and small per-section subtitles."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Default body copy on both light (hero) and dark surfaces."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Uppercase status badges, Contact labels, project-card period text."
+      }
+    },
+    "shadows": [
+      {
+        "name": "primary-button-glow",
+        "value": "0 4px 15px rgba(99, 102, 241, 0.3)",
+        "purpose": "Ambient indigo glow under the primary CTA at rest. Doubles in alpha and size on hover."
+      },
+      {
+        "name": "primary-button-glow-hover",
+        "value": "0 8px 25px rgba(99, 102, 241, 0.4)",
+        "purpose": "Hover state for the primary CTA."
+      },
+      {
+        "name": "hero-portrait",
+        "value": "0 8px 25px rgba(0, 0, 0, 0.15)",
+        "purpose": "Drop-shadow under the hero portrait WebP. Softens to deeper shadow on container hover."
+      },
+      {
+        "name": "hero-portrait-hover",
+        "value": "0 12px 35px rgba(0, 0, 0, 0.2)",
+        "purpose": "Hover state for the hero portrait container."
+      },
+      {
+        "name": "category-card-hover",
+        "value": "0 25px 50px -12px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(99, 102, 241, 0.1)",
+        "purpose": "Deep lift shadow plus a 1px indigo ring on the skill category card hover."
+      },
+      {
+        "name": "skill-pill-hover",
+        "value": "0 8px 20px rgba(99, 102, 241, 0.3)",
+        "purpose": "Hover glow on individual skill pills."
+      },
+      {
+        "name": "project-card-hover",
+        "value": "0 20px 40px rgba(0, 0, 0, 0.4)",
+        "purpose": "Hover lift shadow on the project card."
+      },
+      {
+        "name": "info-item-hover",
+        "value": "0 8px 25px rgba(0, 0, 0, 0.3)",
+        "purpose": "Hover lift shadow on Contact info items."
+      },
+      {
+        "name": "social-link-hover",
+        "value": "0 10px 25px rgba(0, 0, 0, 0.3)",
+        "purpose": "Hover lift shadow on Contact social link tiles."
+      },
+      {
+        "name": "view-project-button",
+        "value": "0 4px 15px rgba(99, 102, 241, 0.3)",
+        "purpose": "Glow under the 'View Project' overlay button (resting)."
+      },
+      {
+        "name": "view-project-button-hover",
+        "value": "0 6px 25px rgba(99, 102, 241, 0.5)",
+        "purpose": "Glow under the 'View Project' overlay button (revealed)."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-standard",
+        "value": "cubic-bezier(0.4, 0, 0.2, 1)",
+        "purpose": "Default easing for state transitions across cards, buttons, hovers."
+      },
+      {
+        "name": "ease-overshoot",
+        "value": "cubic-bezier(0.34, 1.56, 0.64, 1)",
+        "purpose": "Reserved for reveals (View Project overlay). Bouncy, slightly elastic."
+      },
+      {
+        "name": "duration-quick",
+        "value": "0.2s",
+        "purpose": "Link color shifts and small state changes."
+      },
+      {
+        "name": "duration-default",
+        "value": "0.3s",
+        "purpose": "Default transition duration for hover states on buttons, cards, pills."
+      },
+      {
+        "name": "duration-slow",
+        "value": "0.4s",
+        "purpose": "Card hover lifts, image overlays, larger state changes."
+      },
+      {
+        "name": "duration-shimmer",
+        "value": "0.5s",
+        "purpose": "Skill pill shimmer pseudo-element sweep."
+      },
+      {
+        "name": "duration-image-zoom",
+        "value": "0.5s",
+        "purpose": "Project card image zoom on hover."
+      },
+      {
+        "name": "duration-progress",
+        "value": "0.6s",
+        "purpose": "Education progress bar fill transition."
+      },
+      {
+        "name": "entrance-hero-icons",
+        "value": "iconListAnimation 2s ease-in-out",
+        "purpose": "Hero social icons rotate 180° from off-screen into a downward arc."
+      },
+      {
+        "name": "entrance-hero-icon-bounce",
+        "value": "iconAnimation 0.3s ease-in-out alternate 2; delay 2.2–2.8s",
+        "purpose": "Each hero icon bounces once after settling."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "480px",
+        "purpose": "Small mobile boundary — Contact info collapses to single column, hero and social link sizes reduce."
+      },
+      {
+        "name": "md",
+        "value": "768px",
+        "purpose": "Tablet / mobile boundary — root font-size steps from 16 → 17 px, grids switch to single column, hero text centers."
+      },
+      {
+        "name": "lg",
+        "value": "1024px",
+        "purpose": "Desktop entry — root font-size steps to 18 px, hero switches to side-by-side grid, education/projects skill grids go to 2 columns."
+      },
+      {
+        "name": "xl",
+        "value": "1280px",
+        "purpose": "Wide desktop — root font-size steps to 19 px, hero gains additional side padding, hero portrait grows to 18em."
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The signature CTA. Indigo→violet gradient with ambient glow, lifts -2px on hover.",
+      "html": "<button class=\"ds-btn-primary\">View My Projects</button>",
+      "css": ".ds-btn-primary { display: inline-block; padding: 0.75rem 1.5rem; background: linear-gradient(135deg, var(--color-primary, #6366f1) 0%, #8b5cf6 100%); color: #fff; font: 600 0.9rem/1 Inter, system-ui, sans-serif; border-radius: 0.6rem; border: none; cursor: pointer; box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3); transition: all 0.3s ease; text-decoration: none; } .ds-btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(99, 102, 241, 0.4); } .ds-btn-primary:focus-visible { outline: 2px solid var(--color-primary-light, #818cf8); outline-offset: 2px; }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Outlined companion CTA. Lives only in the hero. Transparent at rest, fills with light indigo on hover.",
+      "html": "<a class=\"ds-btn-secondary\" href=\"#contact\">Contact Me</a>",
+      "css": ".ds-btn-secondary { display: inline-block; padding: 0.75rem 1.5rem; background: transparent; color: #475569; font: 600 0.9rem/1 Inter, system-ui, sans-serif; border-radius: 0.6rem; border: 2px solid rgba(99, 102, 241, 0.3); cursor: pointer; transition: all 0.3s ease; text-decoration: none; } .ds-btn-secondary:hover { background: rgba(99, 102, 241, 0.1); border-color: rgba(99, 102, 241, 0.5); transform: translateY(-2px); } .ds-btn-secondary:focus-visible { outline: 2px solid var(--color-primary-light, #818cf8); outline-offset: 2px; }"
+    },
+    {
+      "name": "Skill Pill",
+      "kind": "chip",
+      "refersTo": "skill-pill",
+      "description": "The signature chip. Indigo→violet gradient, warms toward magenta on hover with a shimmer sweep.",
+      "html": "<span class=\"ds-skill-pill\"><span class=\"ds-skill-pill-name\">TypeScript</span></span>",
+      "css": ".ds-skill-pill { display: inline-flex; align-items: center; gap: 0.5rem; background: linear-gradient(135deg, rgba(99, 102, 241, 0.35) 0%, rgba(139, 92, 246, 0.3) 100%); padding: 0.5rem 0.875rem; border-radius: 2rem; border: 1px solid rgba(99, 102, 241, 0.3); cursor: default; position: relative; overflow: hidden; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); } .ds-skill-pill::before { content: \"\"; position: absolute; top: 0; left: -100%; width: 100%; height: 100%; background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent); transition: left 0.5s ease; } .ds-skill-pill:hover { background: linear-gradient(135deg, rgba(139, 92, 246, 0.5) 0%, rgba(236, 72, 153, 0.4) 100%); transform: translateY(-2px) scale(1.02); border-color: rgba(139, 92, 246, 0.5); box-shadow: 0 8px 20px rgba(99, 102, 241, 0.3); } .ds-skill-pill:hover::before { left: 100%; } .ds-skill-pill-name { font: 500 0.875rem/1 Inter, system-ui, sans-serif; color: #e0e7ff; letter-spacing: 0.01em; }"
+    },
+    {
+      "name": "Greeting Pill",
+      "kind": "chip",
+      "refersTo": "greeting-pill",
+      "description": "Tiny indigo chip above the hero name. The first signal that this site is indigo-coded.",
+      "html": "<span class=\"ds-greeting-pill\">Hi! I'm</span>",
+      "css": ".ds-greeting-pill { display: inline-block; font: 600 0.9rem/1 Inter, system-ui, sans-serif; color: var(--color-primary, #6366f1); background: rgba(99, 102, 241, 0.1); padding: 0.4rem 0.8rem; border-radius: 2rem; border: 1px solid rgba(99, 102, 241, 0.2); margin-bottom: 0.5rem; }"
+    },
+    {
+      "name": "Category Card",
+      "kind": "card",
+      "refersTo": "category-card",
+      "description": "Glass-surface card with a 3px top accent bar that appears on hover. Skills section uses this.",
+      "html": "<div class=\"ds-category-card\"><h3 class=\"ds-category-title\">Frontend</h3><p>Category content goes here.</p></div>",
+      "css": ".ds-category-card { background: linear-gradient(145deg, rgba(255, 255, 255, 0.07) 0%, rgba(255, 255, 255, 0.02) 100%); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 1.25rem; padding: 1.75rem; transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); position: relative; overflow: hidden; } .ds-category-card::before { content: \"\"; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, #6366f1, #8b5cf6, #ec4899); opacity: 0; transition: opacity 0.3s ease; } .ds-category-card:hover { background: linear-gradient(145deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.02) 100%); border-color: rgba(99, 102, 241, 0.25); transform: translateY(-6px); box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(99, 102, 241, 0.1); } .ds-category-card:hover::before { opacity: 1; } .ds-category-title { font: 600 1.35rem/1 Inter, system-ui, sans-serif; color: #f1f5f9; margin: 0 0 1rem; }"
+    },
+    {
+      "name": "Project Card",
+      "kind": "card",
+      "refersTo": "card-project",
+      "description": "Glass-surface card with a 16:10 image area. Image scales on hover; an overshoot-revealed 'View Project' overlay slides up.",
+      "html": "<div class=\"ds-project-card\"><div class=\"ds-project-image\"><div class=\"ds-project-overlay\"><span class=\"ds-view-project\">View Project →</span></div></div><div class=\"ds-project-content\"><h3>Project Title</h3><p>Description.</p></div></div>",
+      "css": ".ds-project-card { display: flex; flex-direction: column; background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 1rem; overflow: hidden; transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); } .ds-project-card:hover { transform: translateY(-2px); box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); border-color: rgba(99, 102, 241, 0.5); } .ds-project-image { position: relative; width: 100%; aspect-ratio: 16 / 10; background: #1e1e2e; overflow: hidden; } .ds-project-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(70, 63, 170, 0.3) 0%, rgba(99, 102, 241, 0.2) 30%, transparent 100%); display: flex; align-items: end; justify-content: center; padding-bottom: 2rem; opacity: 0; transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1); } .ds-project-card:hover .ds-project-overlay { opacity: 1; } .ds-view-project { display: inline-flex; align-items: center; gap: 0.5rem; color: #fff; font: 600 0.9rem/1 Inter, system-ui, sans-serif; letter-spacing: 0.05em; text-transform: uppercase; padding: 0.6rem 1.25rem; background: linear-gradient(135deg, rgba(99, 102, 241, 0.8) 0%, rgba(139, 92, 246, 0.8) 100%); border-radius: 0.25rem; transform: translateY(15px); opacity: 0; transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1); box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3); } .ds-project-card:hover .ds-view-project { transform: translateY(0); opacity: 1; transition-delay: 0.08s; box-shadow: 0 6px 25px rgba(99, 102, 241, 0.5); } .ds-project-content { padding: 1.5rem; } .ds-project-content h3 { font: 700 1.35rem/1.2 Inter, system-ui, sans-serif; color: #fff; margin: 0 0 0.5rem; } .ds-project-content p { font: 400 0.95rem/1.6 Inter, system-ui, sans-serif; color: #b8c5d6; margin: 0; }"
+    },
+    {
+      "name": "Status Badge",
+      "kind": "chip",
+      "refersTo": "status-badge-active",
+      "description": "Uppercase pill for state. Two variants: Active (indigo) and Done (mint/emerald). Used in Education cards.",
+      "html": "<span class=\"ds-status-badge ds-status-active\">In Progress</span>\n<span class=\"ds-status-badge ds-status-done\">Completed</span>",
+      "css": ".ds-status-badge { display: inline-block; padding: 0.25rem 0.65rem; font: 600 0.7rem/1 Inter, system-ui, sans-serif; text-transform: uppercase; letter-spacing: 0.04em; border-radius: 999px; white-space: nowrap; } .ds-status-active { color: #a5b4fc; background: rgba(99, 102, 241, 0.12); border: 1px solid rgba(99, 102, 241, 0.3); } .ds-status-done { color: #6ee7b7; background: rgba(16, 185, 129, 0.1); border: 1px solid rgba(16, 185, 129, 0.25); }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The After-Hours Studio",
+    "overview": "Two rooms, one practice. The hero is the studio — warm light, a portrait, the developer at work. Everything below it is the production gallery — dark, cool, the products that came out of the studio. The visitor crosses from one room into the other, and the change in light is the change in register. The palette carries that arc. Indigo is the only signal color and it shifts hue as the visitor descends — #6366f1 at the surface, sliding into #8b5cf6 and #a855f7 in deeper elements, never resting on a single flat color. The cream of the hero (#f8f7f4 → #f0efe9) gives way to a deep ink (#0f0f1a) with gradient transitions into #16213e in Skills, into #1a1a2e in Education, into #0a0a0f at the Footer. The site cools as it descends. The language of components is expressive but disciplined. Buttons are saturated gradients with glow, cards lift and bloom on hover, and a single overshoot easing (cubic-bezier(0.34, 1.56, 0.64, 1)) punctuates the most important reveal — the 'View Project' overlay on project cards. The hero alone carries an entrance animation: social icons curve in over 2 seconds, then bounce twice and rest. Everything below reacts to the visitor; the hero performs for the visitor.",
+    "keyCharacteristics": [
+      "Two-room composition: a warm hero above, a dark production gallery below.",
+      "Indigo → violet → magenta as a chromatic arc, not a fixed accent.",
+      "Glass surfaces (translucent white over dark) for every card and info item.",
+      "Expressive but bounded: gradients and overshoot reserved for primary actions and reveals.",
+      "Responsive typography via root font-size stepping at 768 / 1024 / 1280 px.",
+      "Print styles invert to black-on-white for clean CV extraction."
+    ],
+    "rules": [
+      {
+        "name": "The Indigo Arc Rule",
+        "section": "colors",
+        "body": "The primary accent is never used as a single flat color. It always appears at the beginning of a gradient that warms toward violet and magenta. The visitor never sees indigo without seeing where it's going."
+      },
+      {
+        "name": "The Glass Surface Rule",
+        "section": "colors",
+        "body": "Every card, info item, or social-link container on a dark surface is a translucent white (rgba(255, 255, 255, 0.04–0.10)) over the bg. The bg color gives the surface its tint. There are no opaque card fills on dark surfaces."
+      },
+      {
+        "name": "The Cream Sanctuary Rule",
+        "section": "colors",
+        "body": "The hero is the only light surface on the site. It is also the only surface where body text is dark, indigo glows are absent, and section dividers do not exist. The boundary between hero and the rest is non-negotiable."
+      },
+      {
+        "name": "The Gradient Title Rule",
+        "section": "typography",
+        "body": "Every section title (h2) on a dark surface renders as a linear-gradient(135deg, #fff 0%, #a5b4fc 50%, #a78bfa 100%) text fill (or the simpler two-stop white → #a5b4fc in Education). The title is never a flat color. This is the visual signature of the dark side of the site."
+      },
+      {
+        "name": "The Clamp Ramp Rule",
+        "section": "typography",
+        "body": "Responsive sizing is achieved via clamp(min, vw-based, max) ranges on every text element that matters (h1–h3, hero .name, hero .title, section titles). The root font-size steps from 16 → 17 → 18 → 19 px at the 768 / 1024 / 1280 px breakpoints as a hidden second tier."
+      },
+      {
+        "name": "The Glow Belongs to Action Rule",
+        "section": "elevation",
+        "body": "Glows appear on hover, on primary buttons, and on the hero portrait — never on resting surfaces. A resting card has no shadow; a hovered card lifts and blooms."
+      },
+      {
+        "name": "The Section Seam Rule",
+        "section": "elevation",
+        "body": "Every dark section (except the hero) carries a 1px gradient seam at its top edge. The seam is a structural cue — it tells the visitor that a new region is beginning. Sections without seams are not sections in this system."
+      }
+    ],
+    "dos": [
+      "Do use the indigo gradient arc (#6366f1 → #8b5cf6 → #a855f7) for any new CTA or important text fill. Never a flat indigo.",
+      "Do keep the hero light and the rest of the site dark. The two-room composition is the signature.",
+      "Do use translucent white over dark for any new card surface. The bg color does the tinting.",
+      "Do let hover lifts carry depth. Hover = lift + shadow. Rest = flat.",
+      "Do reserve the cubic-bezier overshoot (0.34, 1.56, 0.64, 1) for reveals (the 'View Project' overlay), not for everyday hovers.",
+      "Do use clamp() for any new responsive text. The root font-size stepping is a hidden second tier.",
+      "Do keep section dividers on every dark section. A section without a seam is a regression."
+    ],
+    "donts": [
+      "Don't introduce a new accent color. Indigo is the signal. Status colors are functional exceptions, not a palette.",
+      "Don't add drop shadows to resting surfaces. Glow belongs to action only.",
+      "Don't add borders thicker than 1 px. Hairlines, not frames.",
+      "Don't animate entrance on anything except the hero. The hero performs; everything else reacts.",
+      "Don't use a flat color for a section title. The gradient text fill is the signature.",
+      "Don't invent metrics, real client names, or claims that aren't in the data files. The portfolio's editorial discipline mirrors its author's.",
+      "Don't add bilingual routes. English-only is intentional — the bilingual plan belongs to a separate CV project."
+    ]
+  }
+}
