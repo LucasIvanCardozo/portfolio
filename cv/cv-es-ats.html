@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>Lucas Iván Cardozo — CV (ES)</title>
+    <link rel="stylesheet" href="cv-ats.css" />
+  </head>
+  <body>
+    <main class="cv" lang="es">
+      <header class="header">
+        <h1 class="name">Lucas Iván Cardozo</h1>
+        <p class="role">Full-Stack TypeScript Developer · React · Next.js</p>
+        <p class="contact">
+          Mar del Plata, Argentina ·
+          <a href="mailto:lucasivancardozo27@gmail.com">lucasivancardozo27@gmail.com</a> ·
+          <a href="https://wa.me/5492235319564">+54 9 223 531 9564</a>
+        </p>
+        <p class="contact">
+          <a href="https://www.linkedin.com/in/lucas-ivan-cardozo/">linkedin.com/in/lucas-ivan-cardozo</a>
+          ·
+          <a href="https://github.com/LucasIvanCardozo">github.com/LucasIvanCardozo</a>
+        </p>
+      </header>
+
+      <section class="section">
+        <h2 class="section-title">Resumen Profesional</h2>
+        <p class="summary">
+          Estudiante de Ingeniería Informática en la UNMdP, autodidacta y orientado a
+          producto. Diseña y construye aplicaciones web completas con TypeScript, React,
+          Next.js y Node.js, desde el modelado de datos hasta la implementación de UI. Ha
+          entregado productos para clientes reales y actualmente desarrolla una plataforma
+          SaaS para su lanzamiento.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">Habilidades</h2>
+        <dl class="skills">
+          <div class="skill-row">
+            <dt>Lenguajes</dt>
+            <dd>TypeScript · JavaScript (ES2023) · SQL · HTML5 · CSS3</dd>
+          </div>
+          <div class="skill-row">
+            <dt>Frontend</dt>
+            <dd>
+              React 19 · Next.js 16 (App Router) · Vite · React Hook Form · Zod · CSS Modules ·
+              Tailwind CSS · Konva
+            </dd>
+          </div>
+          <div class="skill-row">
+            <dt>Backend</dt>
+            <dd>
+              Node.js · Next.js Server Actions · NextAuth (Auth.js) · JWT · bcrypt ·
+              Arquitectura multi-tenant
+            </dd>
+          </div>
+          <div class="skill-row">
+            <dt>Datos</dt>
+            <dd>Prisma 7 · PostgreSQL · Diseño de schema · Transacciones</dd>
+          </div>
+          <div class="skill-row">
+            <dt>Testing</dt>
+            <dd>Vitest · Playwright · Lighthouse budgets</dd>
+          </div>
+          <div class="skill-row">
+            <dt>Herramientas</dt>
+            <dd>Git · GitHub · Linux · Neovim · VS Code · pnpm · Biome</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">Experiencia Profesional</h2>
+
+        <article class="role">
+          <header class="role-header">
+            <h3 class="role-title">Carta QR — Plataforma SaaS para restaurantes</h3>
+            <span class="role-period">2025 – Presente</span>
+          </header>
+          <p class="role-meta">Desarrollador Full-Stack · Producto independiente</p>
+          <p class="role-context">
+            SaaS multi-tenant con menú QR, pedidos desde mesa, gestión de caja y analítica.
+            Arquitectura por capas: Repository → Use Case → Server Action con Server Actions
+            de Next.js 16.
+          </p>
+          <ul class="role-bullets">
+            <li>Multi-tenant con enrutamiento por subdominio y aislamiento por venue</li>
+            <li>Realtime con Soketi/Pusher WebSockets y push notifications para staff</li>
+            <li>Auth.js + Google OAuth + RBAC; validación con Zod end-to-end</li>
+            <li>Suite de testing: Vitest + Playwright + axe-core + Testcontainers</li>
+          </ul>
+          <p class="role-stack">
+            Next.js 16 · React 19 · Prisma 7 · PostgreSQL · Auth.js · Soketi · Zod · Docker · nginx
+          </p>
+        </article>
+
+        <article class="role">
+          <header class="role-header">
+            <h3 class="role-title">Boston Automotores — Sitio web concesionario</h3>
+            <span class="role-period">2024</span>
+          </header>
+          <p class="role-meta">
+            Desarrollador Web Freelance · Concesionario de autos (cliente real)
+          </p>
+          <p class="role-context">
+            Sitio web público y panel administrativo: catálogo de vehículos con filtros por
+            marca, precio y kilometraje, gestión de inventario, fichas técnicas, leads y
+            notificaciones por email. Entregado, en uso real en producción.
+          </p>
+          <p class="role-stack">
+            Next.js · React · Prisma · PostgreSQL · Cloudinary · JWT · Resend
+          </p>
+        </article>
+
+        <article class="role">
+          <header class="role-header">
+            <h3 class="role-title">Bowling de Paso — Sitio web sala de bowling</h3>
+            <span class="role-period">2024</span>
+          </header>
+          <p class="role-meta">
+            Desarrollador Web Freelance · Bowling de Paso (cliente real)
+          </p>
+          <p class="role-context">
+            Sitio web público con integración de canal de WhatsApp, tarjetas LocalBusiness
+            schema y OpenGraph optimizado. SEO técnico: JSON-LD, sitemap, metadata. Entregado,
+            en uso real en producción.
+          </p>
+          <p class="role-stack">React · Vite · CSS Modules · GitHub Pages</p>
+        </article>
+
+        <article class="role">
+          <header class="role-header">
+            <h3 class="role-title">Tu Amigo FI — Plataforma estudiantes UNMdP</h3>
+            <span class="role-period">2024 – 2025</span>
+          </header>
+          <p class="role-meta">Desarrollador Full-Stack · Producto independiente</p>
+          <p class="role-context">
+            Plataforma colaborativa para compartir material práctico, parciales, respuestas y
+            comentarios entre carreras y años. Modelado complejo: carreras, planes, cursadas,
+            prerrequisitos. Google OAuth, carga de archivos, búsqueda, filtrado por
+            departamento.
+          </p>
+          <p class="role-stack">
+            Next.js · React · Prisma · PostgreSQL · NextAuth · Cloudinary
+          </p>
+        </article>
+
+        <article class="role">
+          <header class="role-header">
+            <h3 class="role-title">Pathfinder — Gestor de batallas de rol</h3>
+            <span class="role-period">2025</span>
+          </header>
+          <p class="role-meta">Desarrollador Full-Stack · Producto independiente</p>
+          <p class="role-context">
+            Aplicación web para gestión de batallas de rol (Pathfinder / D&amp;D 5e). Mapas con
+            canvas Konva, seguimiento de iniciativa, condiciones, hechizos y persistencia de
+            escenarios. Sistema de capas, PostgreSQL, multi-usuario.
+          </p>
+          <p class="role-stack">Next.js · React · TypeScript · Konva · Prisma · PostgreSQL · Zod</p>
+        </article>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">Educación</h2>
+        <div class="edu">
+          <p class="edu-degree">
+            Ingeniería Informática — Universidad Nacional de Mar del Plata (UNMdP)
+          </p>
+          <p class="edu-meta">2019 – Presente · En curso · Cuarto año · ~60% completado</p>
+        </div>
+        <div class="edu">
+          <p class="edu-degree">Técnico en Alimentos — Educación Secundaria Técnica</p>
+          <p class="edu-meta">Completo</p>
+        </div>
+      </section>
+
+      <section class="section section--last section--inline">
+        <p class="languages">
+          <strong>Idiomas:</strong>
+          <span><strong>Español</strong> Nativo</span>
+          <span class="sep">·</span>
+          <span><strong>Inglés</strong> B1</span>
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

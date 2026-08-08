@@ -1,0 +1,245 @@
+/* =============================================================
+   Lucas Iván Cardozo — CV print stylesheet
+   Single-column, ATS-strict, A4 portrait
+   No images, no tables, no headers/footers, no icons.
+   ============================================================= */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family:
+    "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  font-size: 9.5pt;
+  line-height: 1.25;
+  color: #000;
+  background: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+/* ---------- Page (A4) ---------- */
+
+@page {
+  size: A4 portrait;
+  margin: 12mm 15mm 10mm 15mm;
+}
+
+.cv {
+  width: 100%;
+}
+
+/* ---------- Header ---------- */
+
+.header {
+  margin-bottom: 3.5mm;
+}
+
+.name {
+  font-size: 18pt;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  line-height: 1.1;
+  margin-bottom: 0.8mm;
+}
+
+.role {
+  font-size: 10.5pt;
+  font-weight: 600;
+  margin-bottom: 1.6mm;
+}
+
+.contact {
+  font-size: 9pt;
+  line-height: 1.4;
+}
+
+.contact + .contact {
+  margin-top: 0.4mm;
+}
+
+/* ---------- Section ---------- */
+
+.section {
+  margin-top: 2.4mm;
+}
+
+.section--last {
+  margin-top: 1.6mm;
+}
+
+.section--inline .section-title {
+  display: none;
+}
+
+.section-title {
+  font-size: 9pt;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-bottom: 1.2mm;
+  border-bottom: 0.6pt solid #000;
+  padding-bottom: 0.6mm;
+}
+
+/* ---------- Summary ---------- */
+
+.summary {
+  font-size: 9.6pt;
+  line-height: 1.4;
+  text-align: left;
+}
+
+/* ---------- Skills ---------- */
+
+.skills {
+  display: block;
+}
+
+.skill-row {
+  display: flex;
+  gap: 3mm;
+  font-size: 9.4pt;
+  line-height: 1.4;
+  margin-bottom: 0.5mm;
+}
+
+.skill-row dt {
+  flex: 0 0 22mm;
+  font-weight: 600;
+  color: #000;
+}
+
+.skill-row dd {
+  flex: 1;
+  color: #1a1a1a;
+}
+
+/* ---------- Experience / Roles ---------- */
+
+.role {
+  margin-top: 1.6mm;
+}
+
+.role:first-of-type {
+  margin-top: 0;
+}
+
+.role-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 4mm;
+  margin-bottom: 0.4mm;
+}
+
+.role-title {
+  font-size: 10pt;
+  font-weight: 700;
+  line-height: 1.25;
+  flex: 1;
+}
+
+.role-period {
+  font-size: 9pt;
+  font-weight: 500;
+  color: #1a1a1a;
+  white-space: nowrap;
+}
+
+.role-meta {
+  font-size: 9pt;
+  font-style: italic;
+  color: #1a1a1a;
+  margin-bottom: 0.6mm;
+}
+
+.role-context {
+  font-size: 9.2pt;
+  line-height: 1.32;
+  margin-bottom: 0.6mm;
+}
+
+.role-bullets {
+  list-style: none;
+  margin: 0 0 0.6mm 3.5mm;
+  padding: 0;
+}
+
+.role-bullets li {
+  position: relative;
+  font-size: 9.2pt;
+  line-height: 1.32;
+  padding-left: 3.2mm;
+  margin-bottom: 0.2mm;
+}
+
+.role-bullets li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 9.2pt;
+  line-height: 1.32;
+}
+
+.role-stack {
+  font-size: 9pt;
+  line-height: 1.35;
+  color: #1a1a1a;
+}
+
+/* ---------- Education ---------- */
+
+.edu {
+  margin-bottom: 0.8mm;
+}
+
+.edu-degree {
+  font-size: 9.6pt;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.edu-meta {
+  font-size: 9pt;
+  line-height: 1.35;
+  color: #1a1a1a;
+}
+
+/* ---------- Languages ---------- */
+
+.languages {
+  font-size: 9.4pt;
+  line-height: 1.4;
+}
+
+.languages .sep {
+  margin: 0 3mm;
+  color: #666;
+}
+
+/* ---------- Print: avoid breaks inside items ---------- */
+
+.role,
+.edu,
+.skill-row,
+.role-bullets li {
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.role-header,
+.role-title {
+  break-after: avoid;
+  page-break-after: avoid;
+}
